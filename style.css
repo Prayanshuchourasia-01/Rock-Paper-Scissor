@@ -67,7 +67,9 @@ main {
 .input3{
     background: var(--input3);
 }
+
 /* this style is given different from any other fields so that we can increase the scope of the hover effect for the users experience  */
+
 .input1 h2{
     padding: 40px;
 }
@@ -97,7 +99,7 @@ main {
     transition: all ease 0.3s;
 }
 
-
+/* Total output style here  */
 
 .totalOutput {
     display: flex;
@@ -127,4 +129,3 @@ main {
     padding: 10px;
     border-radius: 0.4em;
 }
-

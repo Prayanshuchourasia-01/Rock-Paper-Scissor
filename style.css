@@ -1,0 +1,130 @@
+:root {
+    --headerBgCol: #0d015b;
+    --userIndicateOutput: #3b3b3b;
+    --input1:hotpink;
+    --input2:rgb(149, 0, 255);
+    --input3: royalblue ; 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header tag style here  */
+
+header {
+    text-align: center;
+    align-content: center;
+    min-height: 10vh;
+    color: white;
+    background: var(--headerBgCol);
+}
+
+header h1 {
+    font-family: monospace;
+    font-size: 29px;
+}
+
+/* main content style here  */
+
+main {
+    height: 90vh;
+    /* background: grey; */
+    overflow: hidden;
+    text-align: center;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+
+}
+
+.inputs>#rock,
+#paper,
+#scissor {
+    /* background: rgb(125, 122, 122); */
+    color: rgb(0, 0, 0);
+    border-radius: 100%;
+    margin: 50px;
+    height: 150px;
+    width: 150px;
+    align-content: center;
+}
+
+
+.input1{
+    background: var(--input1);
+}
+
+.input2{
+    background: var(--input2);
+}
+
+.input3{
+    background: var(--input3);
+}
+/* this style is given different from any other fields so that we can increase the scope of the hover effect for the users experience  */
+.input1 h2{
+    padding: 40px;
+}
+
+.input2 h2{
+    padding: 40px;
+}
+
+.input3 h2{
+    padding: 40px;
+}
+
+/*  hover effect  */
+
+.input1 h2:hover{
+    transition: all ease 0.3xs;
+    color: white;
+}
+
+.input2 h2:hover{
+    transition: all ease 0.3s;
+    color: white;
+}
+
+.input3 h2:hover{
+    color: white;
+    transition: all ease 0.3s;
+}
+
+
+
+.totalOutput {
+    display: flex;
+    justify-content: center;
+    /* background: red; */
+    margin: 30px;
+}
+
+.totalOutput>.userOutput,
+.compOutput {
+    margin: 0 70px;
+    font-size: 1.4em;
+}
+
+/* users win / lose indication style code here  */
+
+.outputForUser {
+    /* background: red; */
+    margin: 4em;
+}
+
+.outputForUser>span {
+    font-size: 1.8rem;
+    background: var(--userIndicateOutput);
+    color: white;
+
+    padding: 10px;
+    border-radius: 0.4em;
+}
+

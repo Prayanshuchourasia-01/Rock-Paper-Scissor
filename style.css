@@ -53,6 +53,7 @@ main {
     height: 150px;
     width: 150px;
     align-content: center;
+    cursor: pointer;
 }
 
 
@@ -128,4 +129,7 @@ main {
 
     padding: 10px;
     border-radius: 0.4em;
+
 }
+
+
